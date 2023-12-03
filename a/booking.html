@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/data/hptel.png" type="image/png">
+  <link rel="stylesheet" href="styleBook.css">
+  <script defer src="script.js"></script>
+  <title>Booking Room - Pemersatu Hotel</title>
+</head>
+<body>
+  <header>
+    <h1>Pemersatu Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="daftarHarga.html">Daftar Harga</a></li>
+        <li><a href="abaout.html">About Me</a></li>
+        <li><a href="booking.html">Pesan Kamar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="book">
+    <h2 class="head-book">Booking Room</h2>
+    <form id="bookingForm" action="simpan_pemesana.php" method="post">
+      <label for="nama">Nama Pemesan:</label>
+      <input type="text" id="nama" name="nama">
+  
+      <label for="jenisKelamin">Jenis Kelamin:</label>
+      <select id="jenisKelamin" name="jenisKelamin">
+        <option value="laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+      </select>
+  
+      <label for="nomorIdentitas">Nomor Identitas (16 digit):</label>
+      <input type="text" id="nomorIdentitas" name="nomorIdentitas" pattern="\d{16}" title="Isian salah. Data harus 16 digit">
+  
+      <label for="tipeKamar">Tipe Kamar:</label>
+      <select id="tipeKamar" name="tipeKamar">
+        <option value="standar">Standar</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="exlusive">Exlusive</option>
+      </select>
+  
+      <label for="tanggalPesan">Tanggal Pesan (dd/mm/yyyy):</label>
+      <input type="date" id="tanggalPesan" name="tanggalPesan">
+  
+      <label for="durasiMenginap">Durasi Menginap (hari):</label>
+      <input type="number" id="durasiMenginap" name="durasiMenginap">
+  
+      <label for="termasukBreakfast">Termasuk Breakfast:</label>
+      <input type="checkbox" id="termasukBreakfast" name="termasukBreakfast">
+  
+      <button type="button" onclick="hitungTotalBayar()">Hitung Total Bayar</button>
+      <button type="button" onclick="batalPesan()">Batal Pesan</button>
+      <input type="submit" class="btn btn-primary" />
+
+      <label for="totalBayar">Total Bayar:</label>
+      <input type="text" id="totalBayar" name="totalBayar">
+      <input type="hidden" id="diskonStatus" name="diskonStatus">
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Agera Aniska.</p>
+  </footer>
+</body>
+</html>

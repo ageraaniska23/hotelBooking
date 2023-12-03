@@ -1,0 +1,95 @@
+/* Mengatur margin dan padding default */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Memberikan warna latar belakang pada body */
+body {
+  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Menata bagian header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Memastikan h1 pada header tidak memiliki margin */
+header h1 {
+  margin: 0;
+}
+
+/* Menata menu navigasi */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Menata bagian booking */
+#book {
+  padding: 20px;
+}
+
+/* Menata heading pada bagian booking */
+.head-book {
+  color: #333;
+  text-align: center;
+}
+
+/* Menata elemen formulir */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Menata bagian footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Menambahkan gaya pada teks hak cipta */
+footer p {
+  margin: 10px 0;
+}
